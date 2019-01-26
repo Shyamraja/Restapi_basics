@@ -14,6 +14,6 @@ app.get('/test', (req, res) => res.json({msg:"It is working"}))
 app.use('/api/students', students);
 app.use('/api/courses', courses);
 app.use('/api/students/:student_id/grades', grades);
-const PORT = 3000;
+const PORT = 8000;
 
 app.listen(PORT, () => console.log(`Server is running on PORT: ${PORT}`))
